@@ -1,7 +1,6 @@
 header{
-    background-color: rgb(232, 225, 159);
+    background-color: rgb(245, 242, 149);
     position: fixed;
-    height: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -15,10 +14,36 @@ header ul{
     justify-content: space-between;
     display: flex;
 }
+header a,a:visited{
+    color: black
+}
+header a{
+    color: black;
+    text-decoration: none;
+    
+}
+header a:hover{
+color: white;
+}
+header h1{
+    padding: 1rem 1rem 1rem 1rem;
+}
 
+.head1 h1:hover{
+    background-color: rgb(255, 177, 177);
+    color: white;
+}
+.head2 h1:hover{
+    background-color: rgb(164, 245, 181);
+}
+.head3 h1:hover{
+    background-color: rgb(199, 215, 255);
+}
+.head4 h1:hover{
+    background-color: rgba(247, 183, 81, 0.993);
+}
 .AnyLinks li{
-    margin: 1% auto auto auto;  
-    padding: 1rem 2rem 1rem 2rem; 
+    margin: 1% 1rem 1rem 1rem;
 }
 
 header .Writers_PullDoun{
@@ -29,7 +54,15 @@ header img{
     width: 135px;
     height: 90px;
 }
+.dummy{
+    border: solid black 1px ;
+}
 
-header .AnyLinks ul li + li{
-    border-left: 2px solid #00552e;
+.BackGroundImage{
+    background-position: fixed;
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/wagara41-1280x720.png);
 }
