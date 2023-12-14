@@ -1,4 +1,4 @@
-header{
+header {
     background-color: rgb(245, 242, 149);
     position: fixed;
     display: flex;
@@ -9,60 +9,101 @@ header{
     top: 0px;
 }
 
-header ul{
+header ul {
     list-style: none;
     justify-content: space-between;
     display: flex;
 }
-header a,a:visited{
+
+header a,
+a:visited {
     color: black
 }
-header a{
+
+header a {
     color: black;
     text-decoration: none;
-    
+
 }
-header a:hover{
-color: white;
+
+header a:hover {
+    color: white;
 }
-header h1{
+
+header h1 {
     padding: 1rem 1rem 1rem 1rem;
 }
 
-.head1 h1:hover{
+.head1 h1:hover {
     background-color: rgb(255, 177, 177);
     color: white;
 }
-.head2 h1:hover{
+
+.head2 h1:hover {
     background-color: rgb(164, 245, 181);
 }
-.head3 h1:hover{
+
+.head3 h1:hover {
     background-color: rgb(199, 215, 255);
 }
-.head4 h1:hover{
+
+.head4 h1:hover {
     background-color: rgba(247, 183, 81, 0.993);
 }
-.AnyLinks li{
+
+.AnyLinks li {
     margin: 1% 1rem 1rem 1rem;
 }
 
-header .Writers_PullDoun{
+header .Writers_PullDoun {
     display: flex;
 }
 
-header img{
+header img {
     width: 135px;
     height: 90px;
 }
-.dummy{
-    border: solid black 1px ;
+
+.dummy {
+    border: solid black 1px;
 }
 
-.BackGroundImage{
+.BackGroundImage {
     background-position: fixed;
-    height: 100vh; 
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-image: url(../img/wagara41-1280x720.png);
+}
+
+
+.c-btn.slide {
+    background: #fff;
+    color: #ff701e;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.c-btn.slide::after {
+    background: #ff701e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+}
+
+.c-btn.slide:hover {
+    color: #fff;
+}
+
+.c-btn.slide:hover::after {
+    transform: scale(1, 1);
 }
