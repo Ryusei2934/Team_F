@@ -3,58 +3,84 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <title>岩手の魅力を紹介</title>
     <link rel="stylesheet" href="css/index-Style.css">
-    <link rel="stylesheet" href="css/All-Style.css">
+    <link rel="stylesheet" href="css/Header-Style.css">
+    <link rel="stylesheet" href="css/Slide-Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="BackGroundImage">
-        <header>
-            <img src="img/images.png" alt="HomeIcon">
-            <div class="AnyLinks">
-                <ul>
-                    <div class="dummy"></div>
-                    <li><a href="#">
-                            <div class="head1">
-                                <h1>食べ物</h1>
-                            </div>
-                        </a></li>
-                    <div class="dummy"></div>
-                    <li><a href="#">
-                            <div class="head2">
-                                <h1>観光名所</h1>
-                            </div>
-                        </a></li>
-                    <div class="dummy"></div>
-                    <li><a href="#">
-                            <div class="head3">
-                                <h1>イベント</h1>
-                            </div>
-                        </a></li>
-                    <div class="dummy"></div>
-                    <li><a href="#">
-                            <div class="head4">
-                                <h1>有名人</h1>
-                            </div>
-                        </a></li>
-                        <div class="dummy"></div>
-                </ul>
-            </div>
-            <div class="Writers_PullDoun">
-                    
-            </div>
-        </header>
+    <header>
+        <nav class="nav-menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item drop-menu">
+                    <a href="#">About</a>
+                    <ul class="drop-menu-list">
+                        <li class="drop-menu-item">
+                            <a href="#">食べ物</a>
+                        </li>
+                        <li class="drop-menu-item">
+                            <a href="#">観光名所</a>
+                        </li>
+                        <li class="drop-menu-item">
+                            <a href="#">イベント</a>
+                        </li>
+                        <li class="drop-menu-item">
+                            <a href="#">有名人</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Writers</a>
+                    <ul class="drop-menu-list">
+                        <li class="drop-menu-item">
+                            <a href="#">高橋琉生</a>
+                        </li>
+                        <li class="drop-menu-item">
+                            <a href="#">花田咲野</a>
+                        </li>
+                        <li class="drop-menu-item">
+                            <a href="#">阿部颯太</a>
+                        </li>
+                        <li class="drop-menu-item">
+                            <a href="#">野﨑泉美</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="MainLayout">
 
-
-        <div class="main">
-            <p>Index.html</p>
+        <div class="CenterMassage">
+            <h1 class="fuchidori">～岩手を観光しよう～</h1>
+            <h1 class="fuchidori2">岩手県観光ポータルサイト</h2>
         </div>
 
+        <div class="slideshow">
+            <div class="slide"><a href="Page1.html">食べ物</a></div>
+            <div class="slide"><a href="Page2.html">観光名所</a></div>
+            <div class="slide"><a href="Page3.html">イベント</a></div>
+            <div class="slide"><a href="Page4.html">有名人</a></div>
 
-
-
+            <div class="dot-cont">
+                <div class="dot" onclick="clickChangeSlide(0)"></div>
+                <div class="dot" onclick="clickChangeSlide(1)"></div>
+                <div class="dot" onclick="clickChangeSlide(2)"></div>
+                <div class="dot" onclick="clickChangeSlide(3)"></div>
+            </div>
+            <button class="arrow-button left-arrow" onclick="clickChangeSlide(i-1)">&#60;</button>
+            <button class="arrow-button right-arrow" onclick="clickChangeSlide(i+1)">&#62;</button>
+        </div>
+    </div>
 
 </body>
 

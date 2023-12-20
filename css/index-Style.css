@@ -1,109 +1,63 @@
-header {
-    background-color: rgb(245, 242, 149);
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 12%;
-    left: 0px;
-    top: 0px;
-}
-
-header ul {
+* {
+    box-sizing: border-box;
     list-style: none;
-    justify-content: space-between;
+}
+
+body {
     display: flex;
-}
-
-header a,
-a:visited {
-    color: black
-}
-
-header a {
-    color: black;
-    text-decoration: none;
-
-}
-
-header a:hover {
-    color: white;
-}
-
-header h1 {
-    padding: 1rem 1rem 1rem 1rem;
-}
-
-.head1 h1:hover {
-    background-color: rgb(255, 177, 177);
-    color: white;
-}
-
-.head2 h1:hover {
-    background-color: rgb(164, 245, 181);
-}
-
-.head3 h1:hover {
-    background-color: rgb(199, 215, 255);
-}
-
-.head4 h1:hover {
-    background-color: rgba(247, 183, 81, 0.993);
-}
-
-.AnyLinks li {
-    margin: 1% 1rem 1rem 1rem;
-}
-
-header .Writers_PullDoun {
-    display: flex;
-}
-
-header img {
-    width: 135px;
-    height: 90px;
-}
-
-.dummy {
-    border: solid black 1px;
-}
-
-.BackGroundImage {
-    background-position: fixed;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    justify-content: center;
+    align-items: center;
     background-image: url(../img/wagara41-1280x720.png);
-}
-
-
-.c-btn.slide {
-    background: #fff;
-    color: #ff701e;
-    overflow: hidden;
-    position: relative;
+    background-size: cover;
     z-index: 1;
 }
 
-.c-btn.slide::after {
-    background: #ff701e;
+.MainLayout {
+    margin: 10rem;
+    display: block;
+    text-align: center;
+}
+
+.CenterMassage {
+    position: relative;
+    background-image: url(../img/washi.jpg);
+    box-shadow: 0px 0px 0px 10px #eae0ca;
+    border: dashed 3px white;
+    padding: 0.2em 0.5em;
+    color: #454545;
+    margin-bottom: 4rem;
+}
+.CenterMassage::after{
     position: absolute;
-    top: 0;
-    left: 0;
     content: '';
-    width: 100%;
-    height: 100%;
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
-    z-index: -1;
+    right: -11px;
+    top: -11px;
+    border-width: 0 45px 45px 0;
+    border-style: solid;
+    border-color: #eae0ca #fff #eae0ca;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-.c-btn.slide:hover {
-    color: #fff;
+.fuchidori {
+    font-weight: bold;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #cd5;
+    -webkit-text-stroke: 1px #888;
+    text-stroke: 1px #888;
 }
 
-.c-btn.slide:hover::after {
-    transform: scale(1, 1);
+.fuchidori2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #9db;
+    -webkit-text-stroke: 1px #888;
+    text-stroke: 1px #888;
+}
+
+.header_icon img{
+    width: 100px;
+    height: 90px;
+    margin: 1rem 1rem 1rem 1rem;
 }

@@ -1,0 +1,136 @@
+.slideshow {
+    display: flex;
+    position: relative;
+    width: 60vw;
+    height: 60vh;
+    justify-content:center;
+    align-items: center;
+    background: black;
+}
+
+.slideshow a,a:visited{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 300px 300px 0 300px;
+}
+
+.slide {
+    position: absolute;
+    width: 60vw;
+    height: 60vh;
+    display: none;
+    z-index: 2;
+    font-size: 75px;
+    font-family: 'Staatliches', cursive;
+    align-items:end;
+    color: white;
+    justify-content: center;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.slide:nth-of-type(1) {
+    background-image: url(../img/reimen.jpg);
+}
+
+.slide:nth-of-type(2) {
+    background-image: url(../img/pixta_21457587_M-1024x678.webp);
+}
+
+.slide:nth-of-type(3) {
+    background-image: url(../img/H28さんさ0012.jpg);
+}
+
+.slide:nth-of-type(4) {
+    background-image: url(../img/ootani.jpeg);
+}
+
+.active-slide {
+    z-index: 10;
+    display: flex;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+}
+
+.prev-slide {
+    display: flex;
+}
+
+.dot-cont {
+    position: absolute;
+    z-index: 9;
+    bottom: 5px;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.dot {
+    margin: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.dot:hover {
+    cursor: pointer;
+    background: white;
+}
+
+.active-dot {
+    background: rgba(255, 255, 255, 0.9);
+    animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+}
+
+.arrow-button {
+    position: absolute;
+    z-index: 11;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.arrow-button:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+
+
+@keyframes slideIn {
+    0% {
+        transform: translate(-100vw, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        background: rgba(255, 255, 255, 0.9);
+    }
+}
