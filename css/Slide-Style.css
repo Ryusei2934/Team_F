@@ -9,10 +9,10 @@
 }
 
 .slideshow a,a:visited{
+    font-size: 80px;
     display: block;
     color: white;
     text-decoration: none;
-    padding: 300px 300px 0 300px;
 }
 
 .slide {
