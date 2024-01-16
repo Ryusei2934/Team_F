@@ -1,0 +1,36 @@
+body{
+    background-image: url(../img/wagara41-1280x720.png);
+    background-attachment: fixed;
+    background-size: cover;   
+}
+h1{
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 90px;
+}
+img{
+    width: 44%;
+    height: 380px;
+    margin: auto 3%;
+  }
+  p{
+  color: white;
+    font-size: 23px;
+  }
+  h2{
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    height: 67px;
+  }
+  .text{
+    width: 44%;
+    height: 380px;
+    margin: auto 3%;
+  }
+  .con1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
