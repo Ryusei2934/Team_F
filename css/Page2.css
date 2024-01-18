@@ -34,3 +34,17 @@ img{
     justify-content: space-between;
     padding-top: 30px;
   }
+  .fade-in-text {
+    position: relative;
+    font-size: 24px;
+    opacity: 0; /* 初めは透明に設定 */
+    transform: translateY(5%); /* 下からスライドするために位置を下に設定 */
+    animation: fadeInFromBottom 1s forwards; /* フェードインアニメーションの設定 */
+  }
+  
+  @keyframes fadeInFromBottom {
+    to {
+      opacity: 1; /* アニメーション終了時に完全に表示 */
+      transform: translateY(0); /* アニメーション終了時の位置 */
+    }
+  }
