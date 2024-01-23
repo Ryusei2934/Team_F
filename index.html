@@ -67,10 +67,10 @@
 
         <p>↓　スライドをタップして気になる情報をチェック！　↓</p>
         <div class="slideshow">
-            <div class="slide"><a href="Page1.html">食べ物</a></div>
-            <div class="slide"><a href="Page2.html">観光名所</a></div>
-            <div class="slide"><a href="Page3.html">イベント</a></div>
-            <div class="slide"><a href="Page4.html">有名人</a></div>
+            <a href="Page1.html" class="slide"><h2 class="SlideText1">食べ物</h2></a>
+            <a href="Page2.html" class="slide"><h2 class="SlideText2">観光名所</h2></a>
+            <a href="Page3.html" class="slide"><h2 class="SlideText3">イベント</h2></a>
+            <a href="Page4.html" class="slide"><h2 class="SlideText4">有名人</h2></a>
 
             <div class="dot-cont">
                 <div class="dot" onclick="clickChangeSlide(0)"></div>
@@ -81,6 +81,9 @@
             <button class="arrow-button left-arrow" onclick="clickChangeSlide(i-1)">&#60;</button>
             <button class="arrow-button right-arrow" onclick="clickChangeSlide(i+1)">&#62;</button>
         </div>
+    </div>
+    <div class="footer">
+        <p>制作：WebアプリケーションTeam-F 一同</p>
     </div>
 
 </body>

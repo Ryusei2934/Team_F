@@ -53,3 +53,31 @@ main{
         margin:2rem;
     }
 }
+
+.selfintoroduction{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    .s12{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 7rem;
+    }
+    .s34{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 7rem;
+    }
+    .s1{
+        width: 10rem;
+    }
+    .s2{
+        width: 10rem;
+    }
+    .s3{
+        width: 10rem;
+    }
+    .s4{
+        width: 10rem;
+    }
+}
