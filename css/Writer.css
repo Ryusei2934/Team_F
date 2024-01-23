@@ -54,6 +54,10 @@ main{
     }
 }
 
+.coment p{
+    font-size: 18px;
+}
+
 .selfintoroduction{
     display: block;
 
