@@ -3,18 +3,40 @@
     position: relative;
     width: 60vw;
     height: 60vh;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     background: black;
 }
 
-.slideshow a,a:visited{
+.slideshow a,
+a:visited {
     font-size: 80px;
-    display: block;
-    color: white;
     text-decoration: none;
 }
 
+.SlideText1{
+    color: #ff9f51;
+    -webkit-text-stroke: 3px #FFF;
+    text-stroke: 3px #FFF;
+}
+
+.SlideText2{
+    color: fuchsia;
+    -webkit-text-stroke: 3px #FFF;
+    text-stroke: 3px #FFF;
+}
+
+.SlideText3{
+    color: #51f6ff;
+    -webkit-text-stroke: 3px #FFF;
+    text-stroke: 3px #FFF;
+}
+
+.SlideText4{
+    color: #c5ff51;
+    -webkit-text-stroke: 3px #FFF;
+    text-stroke: 3px #FFF;
+}
 .slide {
     position: absolute;
     width: 60vw;
@@ -23,7 +45,7 @@
     z-index: 2;
     font-size: 75px;
     font-family: 'Staatliches', cursive;
-    align-items:end;
+    align-items: end;
     color: white;
     justify-content: center;
     box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
