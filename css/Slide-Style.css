@@ -6,37 +6,39 @@
     justify-content: center;
     align-items: center;
     background: black;
+    overflow: hidden;
 }
 
 .slideshow a,
 a:visited {
-    font-size: 80px;
+    font-size: 5rem;
     text-decoration: none;
 }
 
-.SlideText1{
+.SlideText1 {
     color: #ff9f51;
     -webkit-text-stroke: 3px #FFF;
     text-stroke: 3px #FFF;
 }
 
-.SlideText2{
+.SlideText2 {
     color: fuchsia;
     -webkit-text-stroke: 3px #FFF;
     text-stroke: 3px #FFF;
 }
 
-.SlideText3{
+.SlideText3 {
     color: #51f6ff;
     -webkit-text-stroke: 3px #FFF;
     text-stroke: 3px #FFF;
 }
 
-.SlideText4{
+.SlideText4 {
     color: #c5ff51;
     -webkit-text-stroke: 3px #FFF;
     text-stroke: 3px #FFF;
 }
+
 .slide {
     position: absolute;
     width: 60vw;
@@ -49,7 +51,21 @@ a:visited {
     color: white;
     justify-content: center;
     box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-origin: center;
+}
+
+.slide:hover {
+    transition: 0.4s;
+    font-size: 5.5rem;
+    background-size: 110%;
+}
+
+.slide:not(:hover) {
+    transition: 0.4s;
+    font-size: 5rem;
+    background-size: 100%;
 }
 
 .slide:nth-of-type(1) {

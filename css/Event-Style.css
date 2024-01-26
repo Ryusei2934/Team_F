@@ -11,6 +11,8 @@ body {
     background-image: url(../img/wagara41-1280x720.png);
     background-size: cover;
     z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .MainLayout {
