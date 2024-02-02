@@ -11,14 +11,17 @@ body {
     background-size: cover;
     z-index: 1;
 }
+
 .MainLayout {
     margin: 10rem;
     display: block;
     text-align: center;
 }
-.slideshow{
+
+.slideshow {
     margin: 1rem auto;
 }
+
 .CenterMassage {
     position: relative;
     background-image: url(../img/washi.jpg);
@@ -30,7 +33,8 @@ body {
     width: 70%;
     margin: 5rem auto;
 }
-.CenterMassage::after{
+
+.CenterMassage::after {
     position: absolute;
     content: '';
     right: -11px;
@@ -59,11 +63,25 @@ body {
     text-stroke: 1px #888;
 }
 
-p{
+p {
     color: white;
 }
 
-.footer{
+.footer {
     text-align: center;
     position: relative;
+}
+
+body {
+    animation: fadein 1s forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
 }

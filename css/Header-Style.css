@@ -30,7 +30,7 @@ header {
 .menu-list {
     display: flex;
     justify-content: center;
-    /* メニューアイテムを中央揃えに */
+    margin-top: 15px;
 }
 
 .menu-item {
@@ -71,9 +71,10 @@ header {
 .menu-item a {
     align-items: center;
     color: #fff;
+    font-size: 1rem;
     /* メニューアイテム内のリンクテキストの色 */
     display: flex;
-    height: 50px;
+    height: 6vh;
     justify-content: center;
     text-decoration: none;
     /* リンクの下線を非表示 */

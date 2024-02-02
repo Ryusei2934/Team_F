@@ -1,5 +1,5 @@
 let i = 0;
-let time = 6000;
+let time = 10000;
 let slideTimer;
 let slides = document.getElementsByClassName('slide');
 let slideDots = document.getElementsByClassName('dot');
